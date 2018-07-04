@@ -1,43 +1,32 @@
 .col-1{
-    width: 30%;
     order: 1;
     font-family: 'Nunito', sans-serif;
 }
 
 .col-2{
-    width: 30%;
     order: 2;
     font-family: 'Nunito', sans-serif;
 }
 
 .col-3{
-    width: 30%;
     order: 3;
     font-family: 'Nunito', sans-serif;
 }
 
 .footer-about{
-    width: 30%;
     order: 1;
-   
 }
 
 .footer-quick{
-    width: 10%;
     order: 2;
-    
 }
 
 .footer-social{
-    width: 10%;
     order: 3;
-    
 }
 
 .footer-contact{
-    width: 30%;
     order: 4;
-    
 }
 
 #strength-header{

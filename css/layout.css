@@ -150,66 +150,45 @@ header nav ul {
    Horizontal menu
   */
 
-  @media screen and (max-width: 600px) {
-   
+ /*@media(min-width: 800px){*/
+ @media screen and (min-width: 800px) {    
 
-    .footer ul {
-       display: inline;
-       
-      }
-  }
-
-  @media (min-width: 768px) {
-    
     .container{
         display: flex;
+        /*flex-direction: column;
+        
+        justify-items: center;*/
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-    }
-    .col-1{
-        width: 100%;
-        order: 1;
-        font-family: 'Nunito', sans-serif;
-    }
+      }
     
-    .col-2{
-        width: 100%;
-        order: 2;
-        font-family: 'Nunito', sans-serif;
-    }
-    
-    .col-3{
-        width: 100%;
-        order: 3;
-        font-family: 'Nunito', sans-serif;
-    }
-    
+      
     .footer-about{
-        width: 100%;
+        width: 700px;
         order: 1;
        
     }
     
     .footer-quick{
-        width: 100%;
+        width: 700px;
         order: 2;
         
     }
     
     .footer-social{
-        width: 100%;
+        width: 700px;
         order: 3;
         
     }
     
     .footer-contact{
-        width: 100%;
+        width: 700px;
         order: 4;
         
-    }
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
 
     .menu-toggle,
@@ -252,15 +231,27 @@ header nav ul {
     }
   }
   
-  /*
-   Demo purposes only
-  */
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
+  @media screen and (max-width: 800px) {
+    .hero-text h1 {
+        top: 50% !important;
+        font-size:20px !important;
+    }
+    
+    .hero-text p { 
+        display: none ;
+    }
+
+    .logo {
+        margin: 1px 3px 1px 1px !important;
+        font-size: 30px !important;
+      }
+
+      .footer ul {
+        display: inline !important;
+       }
+
   }
-  
+
   header {
     padding: 20px;
     display: flex;
