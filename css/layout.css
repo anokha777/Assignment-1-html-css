@@ -94,10 +94,6 @@ header nav ul {
   /*
    On small devices, allow it to toggle...
   */
-  /*
-   :target for non-JavaScript
-   aria-expanded="true/false" will be for JavaScript
-  */
   .main-menu:target,
   .main-menu[aria-expanded="true"] {
     left: 0;
@@ -232,6 +228,7 @@ header nav ul {
   }
   
   @media screen and (max-width: 800px) {
+      
     .hero-text h1 {
         top: 50% !important;
         font-size:20px !important;
@@ -253,7 +250,7 @@ header nav ul {
   }
 
   header {
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: baseline;
   }
