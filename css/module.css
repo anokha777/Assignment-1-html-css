@@ -22,6 +22,11 @@
 .hero-text h1 { 
   font-size:40px;
 }
+
+h3 {
+    text-align: center;
+}
+
 .hero-text p { 
     font-size:20px;
     color: black;
@@ -52,11 +57,15 @@
  }
 
  .footer ul {
-     display: inline;
+    display: inline;
     list-style-type: none;
     font-size: 20px;
     line-height: 1.42857143;
-   
+    
+  }
+
+  .footer-social li, .footer-quick li{
+      text-align: center;
   }
 
   .footer a {
@@ -82,12 +91,31 @@
     line-height: 40px;
 }
 
+.footer-quick-1 ul{
+    list-style-type: none;   
+    text-align:center;     
+    
+}
+
+.footer-quick-1 li{
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-quick-1  {
+    width: 50%;
+    display:block;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    float:left;
+    overflow:hidden;
+}
 
 .footer h3{
   font-size: 1.5em;
   color: #080607;
   position: relative;
-  margin-bottom: 1.5em;
   font-weight: 600;
   letter-spacing: 1px;
 }
