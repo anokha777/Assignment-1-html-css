@@ -8,56 +8,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assignment-1</title>
+    <title>Assignment-1-Final</title>
 </head>
 
 <body>
-
-    <!--hero image (landing page main image and text)-->
     <div class="hero-image">
-        <nav class="navbar">
+        <header>
+            <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu"
+                aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </a>
 
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Stackroute</a>
-            </div>
+            <a href="#">
+                <h1 class="logo">Stackroute</h1>
+            </a>
 
-            <div>
-                <label for="show-menu" class="show-menu">Show Menu</label>
-                <input type="checkbox" id="show-menu" role="button" />
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="nav-links" id="my-nav-links">
-                <ul class="navbar-right" id="menu">
-                    <li class="">
-                        <a href="#" class="active">Home</a>
+            <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu"
+                    aria-label="Close main menu">
+                    <span class="sr-only">Close main menu</span>
+                    <span class="fa fa-close" aria-hidden="true"></span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Products</a>
                     </li>
-                    <li class="">
-                        <a href="#about">About</a>
+                    <li>
+                        <a href="#">Service</a>
                     </li>
-                    <li class="">
-                        <a href="#service">Service</a>
+                    <li>
+                        <a href="#">Gallery</a>
                     </li>
-                    <li class="">
-                        <a href="#gallery">Gallery</a>
+                    <li>
+                        <a href="#">Team</a>
                     </li>
-                    <li class="">
-                        <a href="#team">Team</a>
+                    <li>
+                        <a href="#">About</a>
                     </li>
-                    <li class="">
-                        <a href="#contact">Contact</a>
+                    <li>
+                        <a href="#">Contact</a>
                     </li>
-                    <!-- <li>
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                </a> 
-                            </li> -->
                 </ul>
-            </div>
-
-        </nav>
-
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </header>
         <div class="hero-text">
-            <h1>FOR A CRACK TEAM OF FULL-STACK PROGRAMMERS WITH STAND-APART EXPERTISE.</h1>
+            <h1>FOR A CRACK TEAM OF FULL-STACK PROGRAMMERS.</h1>
             <p>Here's a world-class programming bootcamp that's designed to deliver digital transformation across an enterprise.</p>
             <button>Know more...</button>
         </div>
@@ -119,9 +116,14 @@
         </div>
 
 
+        <!--<div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6181459330924!2d83.21998411448129!3d25.04702974392411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e4191dcabdccf%3A0xbb1f083a0e2dc58c!2sChakia+Primary+School!5e0!3m2!1sen!2sin!4v1480147345086"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>-->
 
     </div>
-
+    
     <div class="footer">
         <div class="footer-about">
             <h3>About Us</h3>
@@ -199,7 +201,7 @@
                 </li>
                 <li>
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:corptraining@niit.com">corptraining@niit.com </a>
+                    <a href="mailto:corptraining@niit.com">corptraining@niit.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone" aria-hidden="true"></i>1800-102-9036</li>
@@ -211,21 +213,20 @@
     <script>
         function myMap() {
             var mapOptions = {
-                center: new google.maps.LatLng(12.971599, 77.594563),
+                center: new google.maps.LatLng(23.9011923, 84.2799247),
                 zoom: 9,
                 mapTypeId: google.maps.MapTypeId.HYBRID
             }
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
             var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(12.971599, 77.594563),
+                position: new google.maps.LatLng(23.9011923, 84.2799247),
                 map: map
             });
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlA7Awd1tEXRsbecVSCqUVdjCuBmW2h80&callback=myMap"></script>
     <!-- // Google Map -->
-
 </body>
 
 </html>
